@@ -1,11 +1,11 @@
 #!/usr/bin/env/ python
 
-from flask import Flask, request
 import json
+from flask import Flask, request
 from flask_cors import CORS  #, cross_origin
 
 app = Flask(__name__, static_folder='.', static_url_path='')
-cors = CORS(app, supports_credentials=True, allow_headers="Content-Type")
+cors = CORS(app, supports_credentials=True, allow_headers='Content-Type')
 
 
 @app.route('/service', methods=['OPTIONS'])
